@@ -111,15 +111,15 @@ namespace SpeechSample
 
             // Note: Sign up at http://www.projectoxford.ai to get a subscription key.  Search for Speech APIs from Azure Marketplace.  
             // Use the subscription key as Client secret below.
-            Authentication auth = new Authentication("8f4011e3aae84726949064c597893c51");
+            Authentication auth = new Authentication("INSERT-YOUR-KEY-HERE");
 
             string requestUri = args[0].Trim(new char[] { '/', '?' });
 
             /* URI Params. Refer to the README file for more information. */
             requestUri += @"?scenarios=smd";                                  // websearch is the other main option.
             requestUri += @"&appid=D4D52672-91D7-4C74-8AD8-42B1D98141A5";     // You must use this ID.
-            requestUri += @"&locale=en-US";                                   // We support several other languages.  Refer to README file.
-            //requestUri += @"&locale=ko-KR";                                   // We support several other languages.  Refer to README file.
+            //requestUri += @"&locale=en-US";                                   // We support several other languages.  Refer to README file.
+            requestUri += @"&locale=ko-KR";                                   // We support several other languages.  Refer to README file.
             requestUri += @"&device.os=wp7";
             requestUri += @"&version=3.0";
             requestUri += @"&format=json";
